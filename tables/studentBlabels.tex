@@ -1,0 +1,30 @@
+%\clearpage %force this table to start on the next page
+\vspace{5pt}
+\bottomcaption{Set of labels produced by Expert B.}
+\begin{supertabular}{crrp{.6\textwidth}}
+\label{labelsB}
+Letter & P1 & P2 & Description \\ 
+\toprule
+A & 24 & 0 & Constant not used \\
+B & 19 & 0 & Extraneous conditional where one or more conditionals have no affect in execution  \\
+C & 117 & 122 & Extraneous type cast \\
+D & 23 & 0 & Extraneous line duplication \\
+E & 86 & 26 & Unnecessary line because it is extra information that does not achieve the program's core functionality requirement \\
+F & 3 & 0 & Self Assignment \\
+G & 453 & 44 & Extraneous syntax \\
+H & 1 & 0 & Unnecessary return \\
+I & 159 & 1 & No conditional required or should be default case (i.e. elif is not required if it is the base case)  \\
+J & 1 & 0 & This line assumes that water is frozen if the temperature is less than K\_BOIL, which is not true. Water is frozen if below 273 \\
+L & 3 & 20 & This operation should not be required \\
+M & 6 & 18 & Unnecessary declaration  \\
+N & 5 & 0 & Unnecessary operation exit() because using elif will ignore following cases if a previous if statement is true \\
+O & 6 & 0 & This value is always overwritten in the following control flow, and is therefore always defined when it is actually used \\
+P & 0 & 1 & Range defaults from 0 to n and the 0 is not required \\
+Q & 0 & 13 & Unnecessary for loop \\
+R & 0 & 2 & Counter not used \\
+S & 0 & 11 & The default step of range is 1 \\
+T & 0 & 108 & The default start of range is 0 \\
+U & 0 & 4 & This function call / declaration does not accomplish anything \\
+
+\end{supertabular}
+\vspace{2em}

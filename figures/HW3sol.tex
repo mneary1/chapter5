@@ -1,0 +1,20 @@
+\begin{figure}[ht]
+\begin{lstlisting}[numbers=none]
+def main():
+    temp = float(input("Please enter the temperature: "))
+    unit = input("Enter 'C' for Celsius, or 'K' for Kelvin: ")
+    if unit == "K":
+        temp -= 273.15
+    
+    if temp >= 100:
+        print("At this temperature, water is a gas.")
+    elif temp <= 0:
+        print("At this temperature, water is a solid.")
+    else:
+        print("At this temperature, water is a liquid.")
+
+main()
+\end{lstlisting}
+\caption{A correct solution for Problem 1.}
+\label{fig:correctp1}
+\end{figure}

@@ -1,0 +1,24 @@
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[htbp]
+\caption{Problem1 - results with all labels}
+\begin{tabular}{c|rrrrlll}
+\multicolumn{1}{l|}{Results} & \multicolumn{1}{l}{D} & \multicolumn{1}{l}{E} & \multicolumn{1}{l}{S} & \multicolumn{1}{l}{D+E} & E+S & D+S & All \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+TP & 1061 & 213 & 444 & 213 & 202 & 256 & 202 \\
+FP & 2522 & 358 & 1141 & 358 & 14 & 25 & 14 \\
+\rowcolor[HTML]{EFEFEF} 
+TN & 2531 & 4760 & 3959 & 4760 & 5104 & 5093 & 5104 \\
+FN & 33 & 883 & 648 & 883 & 894 & 840 & 894 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Precision & 0.296 & 0.373 & 0.280 & 0.373 & 0.935 & 0.911 & 0.935 \\
+Sensitivity & 0.970 & 0.194 & 0.407 & 0.194 & 0.184 & 0.234 & 0.184 \\
+\rowcolor[HTML]{EFEFEF} 
+Specificity & 0.501 & 0.930 & 0.776 & 0.930 & 0.997 & 0.995 & 0.997 \\
+\multicolumn{1}{l|}{Accuracy} & \multicolumn{1}{l}{0.584} & \multicolumn{1}{l}{0.800} & \multicolumn{1}{l}{0.711} & \multicolumn{1}{l}{0.800} & 0.854 & 0.861 & 0.854 \\
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}l@{}}Balanced\\ Accuracy\end{tabular}} & \multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}0.735} & \multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}0.562} & \multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}0.591} & \multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}0.562} & 0.591 & 0.614 & 0.591 \\
+\multicolumn{1}{l|}{F1 Score} & \multicolumn{1}{l}{0.454} & \multicolumn{1}{l}{0.256} & \multicolumn{1}{l}{0.332} & \multicolumn{1}{l}{0.256} & 0.308 & 0.372 & 0.308
+\end{tabular}
+\end{table}
